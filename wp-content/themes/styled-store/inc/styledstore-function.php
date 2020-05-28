@@ -174,7 +174,7 @@ if ( ! function_exists( 'styledstore_navigation_menu' ) ) :
 
 function styledstore_navigation_menu() { ?>
 
-		<div class="navigation-menu sameheight col-xs-4 col-sm-6 col-md-8">
+		<div class="navigation-menu sameheight col-xs-4 col-sm-6 col-md-8" style="background: none;width: 100%;padding-left: 30px;">
 			<?php
 				$styledstore_primary_nav = array(
 					'theme_location'  => 'primary',
@@ -187,25 +187,25 @@ function styledstore_navigation_menu() { ?>
 			?>
 		</div>
 
-		<div class="mobile-navigation col-xs-4 col-sm-6 col-md-8">
-		<div class="st-mobile-menu">
-			<input id="main-menu-state" type="checkbox" />
-				<label class="main-menu-btn" for="main-menu-state">
-				<span class="main-menu-btn-icon"></span>
-			</label>
-			
-			<?php
-				$styledstore_primary_nav = array(
-					'theme_location'  => 'mobile',
-					'container'       => false,
-					'menu_class'      => 'header-menu sm sm-mint',
-					'menu_id'			=> 'main-menu',
-					'fallback_cb'       => 'wp_page_menu',
-				);
-				wp_nav_menu( $styledstore_primary_nav );
-			?>
-		</div>
-	</div>
+		<div class="mobile-navigation col-xs-4 col-sm-6 col-md-8" style="background: none;">
+            <div class="st-mobile-menu">
+                <input id="main-menu-state" type="checkbox" />
+                    <label class="main-menu-btn" for="main-menu-state">
+                    <span class="main-menu-btn-icon"></span>
+                </label>
+
+                <?php
+                    $styledstore_primary_nav = array(
+                        'theme_location'  => 'mobile',
+                        'container'       => false,
+                        'menu_class'      => 'header-menu sm sm-mint',
+                        'menu_id'			=> 'main-menu',
+                        'fallback_cb'       => 'wp_page_menu',
+                    );
+                    wp_nav_menu( $styledstore_primary_nav );
+                ?>
+            </div>
+        </div>
 	</div><!-- container class closed -->
 </div><!-- header class closed -->
 
@@ -233,10 +233,10 @@ function styledstore_add_search_form_with_navigation_menu( $items, $args ) {
     if( $args->theme_location == 'primary' ) {
     	if ( styledstore_check_woocommerce_activation() ) :
 
-    	$form = '<li class="st-search attach-with-menu"> <form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/'  ) ) . '">
+    	$form = '<li style="margin-left: 30%;" class="st-search attach-with-menu"> <form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/'  ) ) . '">
 			<label class="screen-reader-text" for="s">' . __( 'Search for:', 'styled-store' ) . '</label>
-			<input type="text" value="' .esc_attr( get_search_query() ) . '" name="s" id="s" placeholder="'.esc_attr_x( 'search For', 'placeholder', 'styled-store' ).'" />
-			<button class="btn" type="submit" value="'.esc_attr_x( 'Search', 'submit button', 'styled-store' ).'"><i class="fa fa-search"></i> </button>
+			<input style="border-radius: 20px;" type="text" value="' .esc_attr( get_search_query() ) . '" name="s" id="s" placeholder="'.esc_attr_x( 'search For', 'placeholder', 'styled-store' ).'" />
+			<button class="btn" style="right: 5px;background: none;" type="submit" value="'.esc_attr_x( 'Search', 'submit button', 'styled-store' ).'"><i class="fa fa-search"></i> </button>
 			<input type="hidden" name="post_type" value="product" />
 			</form>
 			</li>';

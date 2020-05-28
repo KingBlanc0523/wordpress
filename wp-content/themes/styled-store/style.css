@@ -73,7 +73,7 @@ a:focus, a:hover, a:active {
 
 
 .header-topbar {
-    text-align: right;
+    text-align: left;
 }
 
 .header-topbar .social-icons {
@@ -106,8 +106,8 @@ a:focus, a:hover, a:active {
 }
 
 .lgn-ct {
+    margin-left: 35%;
     display: inline-block;
-    padding: 0;
 }
 
 .lgn-ct > div {
@@ -127,12 +127,16 @@ a:focus, a:hover, a:active {
 
 }
 
+#main-menu{
+    height: 70px;
+}
+
 .lgn-ct > div a {
     color: #858484;
     line-height: 1;
     font-size: 1.2rem;
     font-weight: 500;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .lgn-ct .mini-cart .st-cart-contents {
@@ -214,7 +218,7 @@ a:focus, a:hover, a:active {
     width: 200%;
     top: 0;
     bottom: 0;
-    background: #fff;
+    /*background: #fff;*/
     right: -200%;
 }
 

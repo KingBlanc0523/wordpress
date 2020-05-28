@@ -22,8 +22,22 @@
 <?php do_action( 'styledstore_move_to_top' ); ?>
 <header id="header">
 	<div class="row">
-		<div class="header-topbar">
-			<div class="container">
+		<div class="header-topbar" style="background: #fff;">
+			<div class="container" style="width: 100%;">
+
+                <div class="logo-container sameheight col-xs-8 col-sm-6 col-md-4" style="margin-left: 0;">
+                    <?php if( has_custom_logo() ) {
+                        styledstore_the_custom_logo();
+                    } else { ?>
+                        <a href="<?php echo esc_url( home_url('/') ); ?>">
+                            <div class="logo">
+                                <div class="site-title"> <?php echo get_bloginfo('name'); ?> </div>
+                                <div class="site-desc">	<?php echo get_bloginfo('description'); ?> </div>
+                            </div>
+                        </a>
+                    <?php } ?>
+                    <span style="font-size: 24px;font-weight: bold;">chumi</span>
+                </div>
 			<?php
 				/**
 				 * @author StyledThemes 
@@ -35,8 +49,14 @@
 				do_action( 'styledstore_header_top_bar_social_links' );
 			?>
 				<?php if( styledstore_check_woocommerce_activation() ) { ?>
-					<div class="lgn-ct">
-						<div class="acc-login">
+					<div class="lgn-ct" style="height: 72px;line-height: 72px;">
+						<div class="acc-login" style="border-right: none;line-height: 30px;line-height: 30px;text-align: center;">
+                            <a href="">
+                                <span style="margin: auto 10px;">    Refer & Get Paid    </span>
+                            </a>
+                            <a href="">
+                                <span style="margin: auto 10px;">   My Tickets   </span>
+                            </a>
 							<?php if ( is_user_logged_in() ) { ?>
 							 	<a href="<?php echo esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ); ?>" class="logout">
 			                        <?php esc_html_e(' Logout', 'styled-store'); ?>
@@ -45,9 +65,12 @@
 							 else { ?>
 							 	<a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" title="<?php esc_attr_e('Login','styled-store'); ?>"><?php esc_html_e('Login','styled-store'); ?></a>
 							 <?php } ?>
+                            <a href="">
+                                <span style="width: 100px;height: 30px;line-height: 30px;display: inline-block;background: blue;color: #fff;margin: auto 10px;">  Create Event  </span>
+                            </a>
 						</div>
 
-						<div class="header-top-cart mini-cart">
+						<div class="header-top-cart mini-cart" style="display: none;">
 							<a class="st-cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'styled-store' ); ?>"><?php esc_html_e( 'cart /', 'styled-store' ); echo WC()->cart->get_cart_total(); ?><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
 								<span class="mini-cart-count-item"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'styled-store' ), WC()->cart->get_cart_contents_count() ); ?>
 								</span>
@@ -60,19 +83,8 @@
 		</div>
 
 		<div class="header">
-			<div class="container">
-				<div class="logo-container sameheight col-xs-8 col-sm-6 col-md-4">
-					<?php if( has_custom_logo() ) {
-						styledstore_the_custom_logo();
-					} else { ?>
-						<a href="<?php echo esc_url( home_url('/') ); ?>">
-							<div class="logo">
-								<div class="site-title"> <?php echo get_bloginfo('name'); ?> </div>
-								<div class="site-desc">	<?php echo get_bloginfo('description'); ?> </div>
-							</div>
-						</a>
-					<?php } ?>
-				</div>
+			<div class="container" style="width: 100%;padding: 0;background: black !important;">
+
 			<!-- </div> -->
 			
 			<?php

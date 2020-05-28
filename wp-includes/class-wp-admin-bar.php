@@ -446,7 +446,7 @@ class WP_Admin_Bar {
 		}
 
 		?>
-		<div id="wpadminbar" class="<?php echo $class; ?>">
+		<div id="wpadminbar" class="<?php echo $class; ?>" style="display: none;margin-top: -32px;height: 0;">
 			<?php if ( ! is_admin() ) { ?>
 				<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1"><?php _e( 'Skip to toolbar' ); ?></a>
 			<?php } ?>
