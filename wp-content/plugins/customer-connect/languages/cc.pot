@@ -1,0 +1,75 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Customer.io Connect for Tickera\n"
+"POT-Creation-Date: 2018-08-28 10:03+0200\n"
+"PO-Revision-Date: 2018-08-28 10:03+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: customerio.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: customerio.php:88
+msgid "Customer.io Connect"
+msgstr ""
+
+#: customerio.php:118
+msgid "Customer.io"
+msgstr ""
+
+#: customerio.php:149
+#, php-format
+msgid ""
+"There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#: includes/admin-pages/customerio_settings.php:17
+msgid "Integrate Customer.io"
+msgstr ""
+
+#: includes/admin-pages/customerio_settings.php:24
+msgid "Site ID"
+msgstr ""
+
+#: includes/admin-pages/customerio_settings.php:26
+msgid ""
+"Site ID can be found on the integrations page of the Customer.io dashboard."
+msgstr ""
+
+#: includes/admin-pages/customerio_settings.php:31
+msgid "API Key"
+msgstr ""
+
+#: includes/admin-pages/customerio_settings.php:33
+msgid ""
+"API Key can be found on the integrations page of the Customer.io dashboard."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Customer.io Connect for Tickera"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Track your customers with Customer.io"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera"
+msgstr ""

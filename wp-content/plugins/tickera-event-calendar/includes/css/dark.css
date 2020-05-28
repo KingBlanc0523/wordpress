@@ -1,0 +1,56 @@
+.fc-view {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.fc-unthemed .fc-today {
+    background-color: #3B4E61;
+    color: #fff;
+}
+
+.fc-event {
+    background-color: #2980b9;
+}
+
+.fc-unthemed th, .fc-unthemed td, 
+.fc-unthemed thead, 
+.fc-unthemed tbody, 
+.fc-unthemed .fc-divider, 
+.fc-unthemed .fc-row, 
+.fc-unthemed .fc-popover {
+    border-color: #34495e;
+}
+
+
+/* BUTTONS */
+
+.fc-state-default {
+    background: none;
+    text-shadow: none;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.fc-state-default:hover,
+.fc-state-down,
+.fc-state-active,
+.fc-toolbar button:hover, 
+.fc-toolbar button:focus, 
+.fc-toolbar input[type="submit"]:hover, 
+.fc-toolbar input[type="button"]:hover, 
+.fc-toolbar input[type="reset"]:hover, 
+.fc-toolbar input[type="submit"]:focus, 
+.fc-toolbar input[type="button"]:focus, 
+.fc-toolbar input[type="reset"]:focus {
+    background: none;
+    background-color: #3B4E61;
+    border: 1px solid transparent;
+}
+
+.fc-toolbar button:active, 
+.fc-toolbar input[type="submit"]:active, 
+.fc-toolbar input[type="button"]:active, 
+.fc-toolbar input[type="reset"]:active {
+    padding: 0 .6em;
+    border-top: none;
+}

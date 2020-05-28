@@ -1,0 +1,81 @@
+.rsc_hide, .rsc_sub_hide{
+    display: none;
+}
+
+.rsc_show, .rsc_sub_show{
+    display: block;
+}
+
+.rsc_sub_metabox label:first-child{
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    display: block;
+    padding-top: 5px;
+
+}
+
+.rsc_sub_metabox label{
+    padding-bottom: 5px;
+    display: block;
+}
+
+.rsc_tickera_radio{
+    display: block;
+    width: 100%;
+}
+
+.rsc_sub_sub{
+    margin-top: 10px;
+}
+.settings_page_restricted-content-settings .wrap>h2:first-child{
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+.settings_page_restricted-content-settings .postbox{
+    border-radius: 5px;
+}
+
+.settings_page_restricted-content-settings .postbox .hndle{
+    cursor: default;
+}
+
+.settings_page_restricted-content-settings #poststuff h3 {
+    background-color: #FFFFFF;
+    padding: 15px 20px 15px 30px;
+    font-family: 'Open Sans', Arial, serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #5d5d5d;
+}
+
+.settings_page_restricted-content-settings #poststuff h3 {
+    background-color: #FFFFFF;
+    padding: 15px 20px 15px 30px;
+    font-family: 'Open Sans', Arial, serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #5d5d5d;
+}
+
+.settings_page_restricted-content-settings #poststuff .inside{
+    padding-left: 30px;
+}
+
+.rsc_protected_icon{
+    float: right;
+    font-size: 14px;
+}
+
+.settings_page_restricted-content-settings .warning-message{
+    padding-left: 30px;
+    padding-top: 23px;
+    color: red;
+}

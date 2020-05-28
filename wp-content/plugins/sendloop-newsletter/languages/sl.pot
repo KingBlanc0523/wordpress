@@ -1,0 +1,119 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tickera Sendloop\n"
+"POT-Creation-Date: 2018-08-28 10:20+0200\n"
+"PO-Revision-Date: 2018-08-28 10:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-pages/settings-tickera_sendloop.php:28
+msgid "Sendloop Options"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:36
+msgid "Disable Sendloop"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:39
+msgid "Check to disable sendloop submission"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:43
+msgid "Sendloop Subdomain"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:45
+msgid "Set your subdomain - <strong>yoursubdomain</strong>.sendloop.com"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:50
+msgid "API Key"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:51
+msgid "Test newsletter submission"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:52
+msgid ""
+"Set the Sendloop API key. In order to generate an API key, simply login to "
+"your Sendloop account, click \"Settings\" on the top right menu. Then click "
+"\"API Settings\" tab. On top right, you will see \"Create new API key\" "
+"button."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:58
+msgid "List ID"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:60
+msgid "Set the Sendloop list ID"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:64
+msgid "Enable Confirmation Checkbox"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:67
+msgid ""
+"If enabled, customers will see checkbox to confirm subscription, if not "
+"customers will be automatically subscribed."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:73
+msgid "Subscribe ticket buying customers only"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_sendloop.php:75
+msgid "If checked only the customers who bought tickets will be subscribed."
+msgstr ""
+
+#: index.php:87
+msgid "Sendloop"
+msgstr ""
+
+#: index.php:106
+msgid "Sign-up to our newsletter."
+msgstr ""
+
+#: index.php:260
+msgid "Please check that all fields are filled in correctly."
+msgstr ""
+
+#: index.php:262
+msgid "Everything works fine!"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Tickera Sendloop"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Tickera Sendloop Newsletter add-on allows you to send marketing emails, "
+"automated messages, and targeted campaigns to your customers."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera.com"
+msgstr ""

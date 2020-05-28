@@ -1,0 +1,218 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tickera CSV Export\n"
+"POT-Creation-Date: 2018-07-27 11:15+0200\n"
+"PO-Revision-Date: 2018-07-18 13:51+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:7
+msgid "Attendee List (CSV Export)"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:12
+msgid "Event"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:35
+msgid "Show Columns"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:39
+msgid "Attendee First Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:40
+msgid "Attendee Last Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:41
+msgid "Attendee Full Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:42
+#: index.php:230
+msgid "Attendee E-mail"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:43
+#: index.php:241
+msgid "Payment Date"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:44
+#: index.php:249
+msgid "Order Number"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:45
+#: index.php:296
+msgid "Order Total"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:46
+#: index.php:310 index.php:312
+msgid "Order Total (Shown Once)"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:47
+#: index.php:256
+msgid "Payment Gateway"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:48
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:97
+#: index.php:288
+msgid "Order Status"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:49
+#: index.php:264
+msgid "Discount Code"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:50
+#: index.php:322
+msgid "Ticket Code"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:51
+#: index.php:331
+msgid "Ticket ID"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:52
+#: index.php:340
+msgid "Ticket Type"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:53
+#: index.php:350
+msgid "Buyer First Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:54
+#: index.php:359
+msgid "Buyer Last Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:55
+msgid "Buyer Full Name"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:56
+msgid "Buyer Email"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:57
+#: index.php:395
+msgid "Checked-in"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:58
+#: index.php:425
+msgid "Check-ins"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:102
+msgid "Any"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:103
+#: index.php:276
+msgid "Paid"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:104
+msgid "Pending / Received"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:118
+msgid "Document Title"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:120
+msgid "Attendee List"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_export_csv_mixed_data.php:125
+msgid "Select / Deselect All"
+msgstr ""
+
+#: index.php:83
+#, php-format
+msgid ""
+"There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#: index.php:118
+msgid "Export CSV"
+msgstr ""
+
+#: index.php:206
+msgid "First Name"
+msgstr ""
+
+#: index.php:214
+msgid "Last Name"
+msgstr ""
+
+#: index.php:222
+msgid "Name"
+msgstr ""
+
+#: index.php:279
+msgid "Received / Pending"
+msgstr ""
+
+#: index.php:282
+msgid "Fraud Detected"
+msgstr ""
+
+#: index.php:368
+msgid "Buyer Name"
+msgstr ""
+
+#: index.php:378
+msgid "Buyer E-Mail"
+msgstr ""
+
+#: index.php:390
+msgid "Yes"
+msgstr ""
+
+#: index.php:392
+msgid "No"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Tickera CSV Export"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Export attendees data in CSV file format"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera.com"
+msgstr ""

@@ -1,0 +1,119 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tickera Mailchimp\n"
+"POT-Creation-Date: 2018-07-27 11:17+0200\n"
+"PO-Revision-Date: 2018-07-18 13:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:18
+msgid "Mailchimp Options"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:28
+msgid "Disable Mailchimp"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:31
+msgid "Check to disable Mailchimp submission"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:36
+msgid "API Key"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:38
+msgid "Set the MailChimp API key."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:43
+msgid "List ID"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:44
+msgid "Test newsletter submission"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:45
+msgid "Set the Mailchimp list ID"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:77
+msgid "Subscribe ticket buying customers only"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:79
+msgid "If checked only the customers who bought tickets will be subscribed."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:84
+msgid "Send Welcome E-mail"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:87
+msgid ""
+"Check to enable Mailchimp to send welcome e-mail (only if you have paid "
+"subscription at Mailchimp)."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:91
+msgid "Enable Double Opt-In"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:94
+msgid ""
+"If enabled, customers will receive mail prompting them to confirm their "
+"subscription."
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:98
+msgid "Enable Confirmation Checkbox"
+msgstr ""
+
+#: includes/admin-pages/settings-tickera_mailchimp.php:101
+msgid ""
+"If enabled, customers will see checkbox to confirm subscription, if not "
+"customers will be automatically subscribed."
+msgstr ""
+
+#: index.php:38 index.php:39 index.php:126
+msgid "Mailchimp"
+msgstr ""
+
+#: index.php:143
+msgid "Sign-up to our newsletter."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Tickera Mailchimp"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Tickera MailChimp Newsletter add-on allows you to send marketing emails, "
+"automated messages, and targeted campaigns to your customers."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera.com"
+msgstr ""

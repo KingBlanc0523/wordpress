@@ -1,0 +1,187 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tickera - Barcode Reader Add-on\n"
+"POT-Creation-Date: 2018-08-28 09:49+0200\n"
+"PO-Revision-Date: 2018-08-28 09:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: tickera-barcode-reader-addon.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-pages/tc_barcode_reader.php:25
+#: tickera-barcode-reader-addon.php:135
+msgid "API Key"
+msgstr ""
+
+#: includes/admin-pages/tc_barcode_reader.php:48
+msgid "Barcode Reader"
+msgstr ""
+
+#: includes/admin-pages/tc_barcode_reader.php:50
+#: tickera-barcode-reader-addon.php:129
+msgid "Select input field and scan a barcode located on the ticket."
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:10
+#: includes/ticket-elements/ticket_barcode_element.php:119
+msgid "Barcode"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:24
+msgid "Barcode Size"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:33
+msgid "Barcode Text Visibility"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:35
+msgid "Visible"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:36
+msgid "Invisible"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:43
+msgid "Barcode Type"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:46
+msgid "C39"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:47
+msgid "C39E"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:48
+msgid "C93"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:49
+msgid "C128"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:50
+msgid "C128A"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:51
+msgid "C128B"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:52
+msgid "EAN2"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:53
+msgid "EAN5"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:54
+msgid "EAN-13"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:55
+msgid "UPCA"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:56
+msgid "UPCE"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:57
+msgid "MSI"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:58
+msgid "MSI+"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:59
+msgid "RMS4CC"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:60
+msgid "IMB"
+msgstr ""
+
+#: includes/ticket-elements/ticket_barcode_element.php:63
+msgid ""
+"Following Barcode types are supported by the iOS check-in app: EAN-13, UPCA, "
+"C93, C128 </br><hr><strong>IMPORTANT:</strong> EAN-13 barcode type supports "
+"numeric characters only!</br>If you intend on using this barcode type, you "
+"must utilize <strong><a href=\"https://tickera.com/addons/serial-ticket-"
+"codes/\">Serial Ticket Codes</a></strong> add-on and set ticket codes with "
+"maximum of 12 characters, without prefix and suffix.</br>For more "
+"information, please read <strong><a href=\"https://tickera.com/tickera-"
+"documentation/barcode-reader/\">documentation</a></strong> on Barcode Reader "
+"add-on and always test ticket scanning prior going live with ticket sales."
+"<hr>"
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:86
+#, php-format
+msgid ""
+"There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:130
+msgid "Checking in..."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:131
+msgid "Insufficient permissions. This API key cannot check in this ticket."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:132
+msgid "Ticket code is wrong or expired."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:133
+msgid "Ticket has been successfully checked in."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:134
+msgid "Ticket does not exist."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:135
+#, php-format
+msgid "Please create and select an %s in order to check in the ticket."
+msgstr ""
+
+#: tickera-barcode-reader-addon.php:136
+msgid "Ticket code cannot be empty"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Tickera - Barcode Reader Add-on"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add Barcode Reader support to Tickera plugin"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera.com"
+msgstr ""

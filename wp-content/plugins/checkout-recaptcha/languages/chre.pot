@@ -1,0 +1,378 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Checkout reCAPTCHA\n"
+"POT-Creation-Date: 2018-08-01 12:04+0200\n"
+"PO-Revision-Date: 2018-08-01 12:04+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-pages/settings.php:22
+msgid "Settings"
+msgstr ""
+
+#: includes/admin-pages/settings.php:24
+#, php-format
+msgid ""
+"If you do not have keys already then visit %shttps://www.google.com/"
+"recaptcha/admin%s"
+msgstr ""
+
+#: includes/admin-pages/settings.php:32
+msgid "Show reCAPTCHA on the checkout page"
+msgstr ""
+
+#: includes/admin-pages/settings.php:34
+msgid "Yes"
+msgstr ""
+
+#: includes/admin-pages/settings.php:35
+msgid "No"
+msgstr ""
+
+#: includes/admin-pages/settings.php:40
+msgid "Language"
+msgstr ""
+
+#: includes/admin-pages/settings.php:45
+msgid "Arabic"
+msgstr ""
+
+#: includes/admin-pages/settings.php:46
+msgid "Afrikaans"
+msgstr ""
+
+#: includes/admin-pages/settings.php:47
+msgid "Amharic"
+msgstr ""
+
+#: includes/admin-pages/settings.php:48
+msgid "Armenian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:49
+msgid "Azerbaijani"
+msgstr ""
+
+#: includes/admin-pages/settings.php:50
+msgid "Basque"
+msgstr ""
+
+#: includes/admin-pages/settings.php:51
+msgid "Bengali"
+msgstr ""
+
+#: includes/admin-pages/settings.php:52
+msgid "Bulgarian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:53
+msgid "Catalan"
+msgstr ""
+
+#: includes/admin-pages/settings.php:54
+msgid "Chinese (Hong Kong)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:55
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:56
+msgid "Chinese (Traditional)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:57
+msgid "Croatian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:58
+msgid "Czech"
+msgstr ""
+
+#: includes/admin-pages/settings.php:59
+msgid "Danish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:60
+msgid "Dutch"
+msgstr ""
+
+#: includes/admin-pages/settings.php:61
+msgid "English (UK)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:62
+msgid "English (US)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:63
+msgid "Estonian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:64
+msgid "Filipino"
+msgstr ""
+
+#: includes/admin-pages/settings.php:65
+msgid "Finnish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:66
+msgid "French"
+msgstr ""
+
+#: includes/admin-pages/settings.php:67
+msgid "French (Canadian)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:68
+msgid "Galician"
+msgstr ""
+
+#: includes/admin-pages/settings.php:69
+msgid "Georgian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:70
+msgid "German"
+msgstr ""
+
+#: includes/admin-pages/settings.php:71
+msgid "German (Austria)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:72
+msgid "German (Switzerland)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:73
+msgid "Greek"
+msgstr ""
+
+#: includes/admin-pages/settings.php:74
+msgid "Gujarati"
+msgstr ""
+
+#: includes/admin-pages/settings.php:75
+msgid "Hebrew"
+msgstr ""
+
+#: includes/admin-pages/settings.php:76
+msgid "Hindi"
+msgstr ""
+
+#: includes/admin-pages/settings.php:77
+msgid "Hungarain"
+msgstr ""
+
+#: includes/admin-pages/settings.php:78
+msgid "Icelandic"
+msgstr ""
+
+#: includes/admin-pages/settings.php:79
+msgid "Indonesian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:80
+msgid "Italian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:81
+msgid "Japanese"
+msgstr ""
+
+#: includes/admin-pages/settings.php:82
+msgid "Kannada"
+msgstr ""
+
+#: includes/admin-pages/settings.php:83
+msgid "Korean"
+msgstr ""
+
+#: includes/admin-pages/settings.php:84
+msgid "Laothian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:85
+msgid "Latvian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:86
+msgid "Lithuanian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:87
+msgid "Malay"
+msgstr ""
+
+#: includes/admin-pages/settings.php:88
+msgid "Malayalam"
+msgstr ""
+
+#: includes/admin-pages/settings.php:89
+msgid "Marathi"
+msgstr ""
+
+#: includes/admin-pages/settings.php:90
+msgid "Mongolian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:91
+msgid "Norwegian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:92
+msgid "Persian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:93
+msgid "Polish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:94
+msgid "Portuguese"
+msgstr ""
+
+#: includes/admin-pages/settings.php:95
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:96
+msgid "Portuguese (Portugal)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:97
+msgid "Romanian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:98
+msgid "Russian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:99
+msgid "Serbian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:100
+msgid "Sinhalese"
+msgstr ""
+
+#: includes/admin-pages/settings.php:101
+msgid "Slovak"
+msgstr ""
+
+#: includes/admin-pages/settings.php:102
+msgid "Slovenian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:103
+msgid "Spanish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:104
+msgid "Spanish (Latin America)"
+msgstr ""
+
+#: includes/admin-pages/settings.php:105
+msgid "Swahili"
+msgstr ""
+
+#: includes/admin-pages/settings.php:106
+msgid "Swedish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:107
+msgid "Tamil"
+msgstr ""
+
+#: includes/admin-pages/settings.php:108
+msgid "Telugu"
+msgstr ""
+
+#: includes/admin-pages/settings.php:109
+msgid "Thai"
+msgstr ""
+
+#: includes/admin-pages/settings.php:110
+msgid "Turkish"
+msgstr ""
+
+#: includes/admin-pages/settings.php:111
+msgid "Ukrainian"
+msgstr ""
+
+#: includes/admin-pages/settings.php:112
+msgid "Urdu"
+msgstr ""
+
+#: includes/admin-pages/settings.php:113
+msgid "Vietnamese"
+msgstr ""
+
+#: includes/admin-pages/settings.php:114
+msgid "Zulu"
+msgstr ""
+
+#: includes/admin-pages/settings.php:129
+msgid "Incomplete reCaptcha error message"
+msgstr ""
+
+#: includes/admin-pages/settings.php:131 index.php:157 index.php:175
+msgid "Please complete the reCAPTCHA"
+msgstr ""
+
+#: includes/admin-pages/settings.php:131 includes/admin-pages/settings.php:138
+msgid "Your Site Key here"
+msgstr ""
+
+#: includes/admin-pages/settings.php:136
+msgid "Site key"
+msgstr ""
+
+#: includes/admin-pages/settings.php:143
+msgid "Secret key"
+msgstr ""
+
+#: includes/admin-pages/settings.php:145
+msgid "Your Secret Key here"
+msgstr ""
+
+#: index.php:80
+#, php-format
+msgid ""
+"There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Checkout reCAPTCHA"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds reCAPTCHA to a Tickera / WooCommerce checkout (Bridge for WooCommerce "
+"compatible)"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tickera.com"
+msgstr ""

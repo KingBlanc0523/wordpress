@@ -1,0 +1,143 @@
+2020-05-17T03:26:06+00:00 CRITICAL Uncaught Error: Call to undefined function restore_current_blog() in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php:378
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Gateway_Stripe_Connect->stripe_authorization('')
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#5 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#6 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php on line 378
+
+2020-05-17T03:39:11+00:00 CRITICAL Uncaught Error: Call to undefined function restore_current_blog() in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php:378
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Gateway_Stripe_Connect->stripe_authorization('')
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#5 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#6 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php on line 378
+
+2020-05-17T03:52:59+00:00 CRITICAL Uncaught Error: Call to undefined function restore_current_blog() in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php:378
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Gateway_Stripe_Connect->stripe_authorization('')
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#5 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#6 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\stripe-connect\tickera-stripe-connect.php on line 378
+
+2020-05-17T03:56:14+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<div class="tc-...')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<div class="tc-...', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T03:57:16+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T04:06:15+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T04:06:20+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T04:56:50+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T07:32:12+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T08:06:05+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T08:07:02+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T08:07:05+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+
+2020-05-17T08:07:08+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php:34
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\index.php(365): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-includes\class-wp-hook.php(287): TC_Speakers->tc_add_speakers('<p>vocal</p>\n')
+#2 D:\phpstudy_pro\WWW\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters('<p>vocal</p>\n', Array)
+#3 D:\phpstudy_pro\WWW\wordpress\wp-includes\post-template.php(253): apply_filters('the_content', 'vocal')
+#4 D:\phpstudy_pro\WWW\wordpress\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Continue readin...')
+#5 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(725): require('D:\\phpstudy_pro...')
+#6 D:\phpstudy_pro\WWW\wordpress\wp-includes\template.php(672): load_template('D:\\phpstudy_pro...', false)
+#7 D:\phpstudy_pro\WWW\wordpress\wp-includes\general-template.php(168): locate_template(Array, true,  in D:\phpstudy_pro\WWW\wordpress\wp-content\plugins\speakers\templates\shortcode-event-speakers.php on line 34
+

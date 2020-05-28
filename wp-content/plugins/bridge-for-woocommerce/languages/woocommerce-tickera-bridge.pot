@@ -1,0 +1,446 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tickera Bridge for WooCommerce\n"
+"POT-Creation-Date: 2019-01-02 10:42+0100\n"
+"PO-Revision-Date: 2018-07-18 13:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bridge-for-woocommerce.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Author of the plugin/theme
+#: bridge-for-woocommerce.php:44
+msgid "Tickera"
+msgstr ""
+
+#: bridge-for-woocommerce.php:45 bridge-for-woocommerce.php:1248
+msgid "WooCommerce"
+msgstr ""
+
+#: bridge-for-woocommerce.php:48 bridge-for-woocommerce.php:52
+#, php-format
+msgid ""
+"To begin using WooCommerce Bridge for Tickera, please install and activate "
+"the latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">%s</a>."
+msgstr ""
+
+#: bridge-for-woocommerce.php:205
+msgid "Override \"Check-ins per ticket\" count"
+msgstr ""
+
+#: bridge-for-woocommerce.php:206
+msgid ""
+"Set \"Yes\" if number of check-ins per ticket variation is different from "
+"the parent ticket product"
+msgstr ""
+
+#: bridge-for-woocommerce.php:207 functions.php:84 functions.php:186
+msgid "No"
+msgstr ""
+
+#: bridge-for-woocommerce.php:208 functions.php:81 functions.php:187
+msgid "Yes"
+msgstr ""
+
+#: bridge-for-woocommerce.php:211 bridge-for-woocommerce.php:2438
+msgid "Check-ins per ticket"
+msgstr ""
+
+#: bridge-for-woocommerce.php:212
+msgid "Set number of check-ins allowed per ticket variation"
+msgstr ""
+
+#: bridge-for-woocommerce.php:213 bridge-for-woocommerce.php:2439
+msgid "Unlimited"
+msgstr ""
+
+#: bridge-for-woocommerce.php:304
+#, php-format
+msgid ""
+"%s add-on requires at least %s version of %s plugin. Your current version of "
+"%s is %s. Please update it."
+msgstr ""
+
+#: bridge-for-woocommerce.php:530 bridge-for-woocommerce.php:1695
+#: bridge-for-woocommerce.php:1756 functions.php:127 functions.php:151
+msgid "Ticket Type"
+msgstr ""
+
+#: bridge-for-woocommerce.php:531 functions.php:133
+msgid "Price"
+msgstr ""
+
+#: bridge-for-woocommerce.php:532 functions.php:139
+msgid "Cart"
+msgstr ""
+
+#: bridge-for-woocommerce.php:606
+#, php-format
+msgid ""
+"%s ADMIN NOTICE:%s  %s ticket types are hidden because they are used for "
+"seatings and can be added to a cart that way only."
+msgstr ""
+
+#: bridge-for-woocommerce.php:628
+msgid "Ticket / Add to cart button"
+msgstr ""
+
+#: bridge-for-woocommerce.php:629
+msgid "Table with Event tickets"
+msgstr ""
+
+#: bridge-for-woocommerce.php:772 bridge-for-woocommerce.php:855
+msgid "Completed"
+msgstr ""
+
+#: bridge-for-woocommerce.php:773 bridge-for-woocommerce.php:856
+msgid "Processing"
+msgstr ""
+
+#: bridge-for-woocommerce.php:774 bridge-for-woocommerce.php:857
+msgid "On Hold"
+msgstr ""
+
+#: bridge-for-woocommerce.php:775 bridge-for-woocommerce.php:858
+msgid "Pending Payment"
+msgstr ""
+
+#: bridge-for-woocommerce.php:794 bridge-for-woocommerce.php:2833
+#: bridge-for-woocommerce.php:2837
+msgid "Order Total"
+msgstr ""
+
+#: bridge-for-woocommerce.php:854
+msgid "Any"
+msgstr ""
+
+#: bridge-for-woocommerce.php:859
+msgid "Refunded"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1063
+msgid "All fields marked with * are required."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1135
+msgid "Append content to the order processing e-mails"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1139
+msgid "Whether to append content to the WooCommerce processing e-mails."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1145 bridge-for-woocommerce.php:1171
+msgid "Message Content"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1148 bridge-for-woocommerce.php:1174
+#: bridge-for-woocommerce.php:1457
+msgid "Tickets"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1149 bridge-for-woocommerce.php:1175
+msgid ""
+"Content of the message. You can use following placeholder: TICKETS_TABLE. "
+"This placeholder shows ordered tickets with the download links."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1161
+msgid "Append content to the order completed e-mails"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1165
+msgid "Whether to append content to the WooCommerce completed e-mails."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1207
+msgid "Order Processing E-mail"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1208
+msgid ""
+"E-mail content shown after order details in the WooCommerce order processing "
+"e-mail."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1213
+msgid "Order Completed E-mail"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1214
+msgid ""
+"E-mail content shown after order details in the WooCommerce order completed "
+"e-mail."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1269
+msgid "Hide Tickets"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1273
+msgid ""
+"Hide WooCommerce products / tickets from the Store page on the front-end."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1279
+msgid "Redirect product single post to an event"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1283
+#, php-format
+msgid ""
+"Whether to redirect ticket product single posts to associated event post. "
+"%sNOTE: Variable products won't be redirected.%s"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1289
+msgid "Cash on Delivery Ticket Download"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1293
+msgid ""
+"Allow ticket download for processing order status for \"Cash on Delivery\" "
+"gateway."
+msgstr ""
+
+#: bridge-for-woocommerce.php:1461 bridge-for-woocommerce.php:1707
+msgid "Book Tickets"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1624 bridge-for-woocommerce.php:1755
+#: bridge-for-woocommerce.php:2428 functions.php:99 functions.php:118
+msgid "Event"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1757
+msgid "First Name"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1758
+msgid "Last Name"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1759
+msgid "Attendee E-mail"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1761
+msgid "Custom Fields"
+msgstr ""
+
+#: bridge-for-woocommerce.php:1858
+msgid "Add Ticket"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2415
+msgid "Product is a Ticket"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2417
+msgid "Select if this product is an event ticket."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2430
+msgid "Select an Event created in Tickera"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2441
+msgid ""
+"It is useful if the event last more than one day. For instance, if duration "
+"of your event is 5 day, you should choose 5 or more for Available Check-ins"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2448
+msgid "Ticket Template"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2451
+msgid "Select how ticket will look."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2460
+msgid "Attendee Form"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2463
+msgid ""
+"Attendee form will be shown for each ticket in the cart for selected ticket "
+"types / ticket products. You can created multiple different attendee forms."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2473
+msgid "Available dates for tickets selling"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2475
+msgid ""
+"Choose if you want to limit ticket sales availability for certain date range "
+"or leave it as open-ended."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2489
+msgid "Selling allowed From"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2496
+msgid "Selling allowed until"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2504
+msgid "Available dates / times for check-in"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2506
+msgid ""
+"Choose if you want to limit check-ins for certain date range or leave it as "
+"open-ended."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2522
+msgid "Check-in allowed from"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2529
+msgid "Check-in allowed until"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2543 bridge-for-woocommerce.php:2589
+msgid "Days"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2546
+msgid "Days after order is placed"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2557 bridge-for-woocommerce.php:2603
+msgid "Hours"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2560
+msgid "Hours after order is placed"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2571 bridge-for-woocommerce.php:2617
+msgid "Minutes"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2574
+msgid "Minutes after order is placed"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2592
+msgid "Days after first check-in"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2606
+msgid "Hours after first check-in"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2620
+msgid "Minutes after first check-in"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2730
+#, php-format
+msgid ""
+"There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#: bridge-for-woocommerce.php:2767 bridge-for-woocommerce.php:2783
+msgid "Company Name"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2768 bridge-for-woocommerce.php:2789
+msgid "Address Line 1"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2769 bridge-for-woocommerce.php:2795
+msgid "Address Line 2"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2770 bridge-for-woocommerce.php:2801
+msgid "City"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2771 bridge-for-woocommerce.php:2807
+msgid "State"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2772 bridge-for-woocommerce.php:2813
+msgid "Postcode"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2773 bridge-for-woocommerce.php:2819
+msgid "Country"
+msgstr ""
+
+#: bridge-for-woocommerce.php:2774 bridge-for-woocommerce.php:2825
+msgid "Phone"
+msgstr ""
+
+#: class-admin-duplicate-product.php:160
+#, php-format
+msgid "Variation #%s of %s"
+msgstr ""
+
+#: functions.php:119
+msgid "Current Event"
+msgstr ""
+
+#: functions.php:125
+msgid "Ticket Type Column Title"
+msgstr ""
+
+#: functions.php:131
+msgid "Price Column Title"
+msgstr ""
+
+#: functions.php:137
+msgid "Cart Column Title"
+msgstr ""
+
+#: functions.php:183
+msgid "Show Price"
+msgstr ""
+
+#: functions.php:192
+msgid "Style"
+msgstr ""
+
+#: ticket-elements/woo-billing-info.php:12
+#: ticket-elements/woo-billing-info.php:50
+msgid "WooCommerce Billing Info"
+msgstr ""
+
+#: ticket-elements/woo-shipping-info.php:12
+#: ticket-elements/woo-shipping-info.php:46
+msgid "WooCommerce Shipping Info"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Tickera Bridge for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://tickera.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Leverage the power of both WooCommerce and Tickera to manage events and sell "
+"tickets"
+msgstr ""

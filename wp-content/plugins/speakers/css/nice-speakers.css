@@ -1,0 +1,129 @@
+.tc-speaker-image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.tc-grid-wrap .tc-speaker-image img {
+    max-width: 100% !important;
+}
+
+.tc-speaker-description-wrap {
+    width: 100%;
+    transition: 0.15s all ease-out;
+}
+
+.tc-speaker-description-wrap a.tc-speaker-name:hover {
+    border: none;    
+    box-shadow: none;
+}
+
+.tc-speaker-description-wrap .tc-speaker-excerpt {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.tc-speaker-description-wrap .tc-speaker-excerpt p.link-more {
+    padding: 0 25px 14px 18px;
+}
+
+.tc-speakers-slider .tc-speaker-description-wrap .tc-speaker-excerpt p.link-more {
+    padding: 10px 25px 14px 0;
+}
+
+.tc-speaker-description-wrap .tc-speaker-excerpt p {
+    color: #000033;
+    margin-bottom: 0;
+}
+
+.tc-big-images-wrap .tc-speaker-info .link-more a.more-link {
+    display: none;
+}
+
+.tc-speaker-description-wrap .tc-speaker-excerpt a {
+    border: none;
+}
+
+.tc-grid-wrap .tc-speakers-grid a {
+    box-shadow: none;
+}
+
+.tc-grid-wrap .tc-speakers-grid a:hover {
+    box-shadow: none;
+}
+
+.tc-grid-wrap .tc-sort-button {
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+}
+
+.tc-grid-wrap .tc-sort-button:hover {
+    cursor: pointer;
+}
+
+.tc-grid-wrap .tc-speakers-grid h4 a,
+.tc-featured-speaker h4 a {
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+}
+
+.tc-speakers-title-wrap a.tc-speaker-website {
+    box-shadow: none;
+}
+
+.tc-speakers-social-single {
+    margin: 0 0 10px 0;
+}
+
+.single-tc_speakers .tc-speakers-social-single a i {
+    font-size: 1.1em;
+}
+
+.single-tc_speakers .tc-speakers-social-single a {
+    display: inline-block;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+    margin-right: 5px;
+}
+
+.single-tc_speakers .tc-speakers-social-single a:hover {
+    box-shadow: none;
+}
+
+.tc-list-speakers .tc-speaker-info h5 {
+    padding: 10px 15px;
+    background-color: #d95441;
+    margin: 0 0 10px 0;
+}
+
+.tc-list-speakers .tc-speaker-info h5 a {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+}
+
+.tc-list-speakers .tc-speakers-social a:hover {
+    color: #d95441;
+    border: none;
+
+    background-color: transparent;
+}
+
+.tc-list-speakers .tc-speakers-social a {
+    background-color: #d95441;
+    color: #fff;
+    border: none;
+    box-shadow: none;       
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+}
+
+.tc-list-speakers .tc-speakers-website a {
+    
+}
