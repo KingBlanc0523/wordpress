@@ -1,0 +1,80 @@
+2020-05-29T14:00:48+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:156
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 156
+
+2020-05-29T14:03:09+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 10
+
+2020-05-29T14:04:40+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:11
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 11
+
+2020-05-29T14:05:25+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:8
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 8
+
+2020-05-29T14:06:26+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:8
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 8
+
+2020-05-29T14:06:44+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 10
+
+2020-05-29T14:08:53+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:151
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 151
+
+2020-05-29T14:09:34+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:159
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 159
+
+2020-05-29T14:10:32+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:159
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 159
+
+2020-05-29T14:10:36+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php:159
+Stack trace:
+#0 D:\phpstudy_pro\WWW\wordpress\wp-includes\template-loader.php(106): include()
+#1 D:\phpstudy_pro\WWW\wordpress\wp-blog-header.php(19): require_once('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\wordpress\index.php(17): require('D:\\phpstudy_pro...')
+#3 {main}
+  thrown in D:\phpstudy_pro\WWW\wordpress\wp-content\themes\store-web\index.php on line 159
+

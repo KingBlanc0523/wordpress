@@ -505,6 +505,9 @@ msgstr ""
 msgid "Hide event after expiration"
 msgstr ""
 
+msgid " Recommand this event"
+msgstr ""
+
 #: includes/addons/better-orders/index.php:237
 #, php-format
 msgid "Order cancelled by %s"
