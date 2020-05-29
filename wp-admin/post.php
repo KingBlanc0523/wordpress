@@ -378,6 +378,8 @@ function addTicketsType($post_title,$ticket_color)
     $productInfoArr['post_status'] = 'publish';
     $productInfoArr['guid'] = '';
     $productInfoArr['post_type'] = 'product';
+    $productInfoArr['post_date_gmt'] = date('Y-m-d H:i:s');
+    $productInfoArr['post_modified_gmt'] = date('Y-m-d H:i:s');
     unset($productInfoArr['filter']);
     $wpdb->insert('w_posts', $productInfoArr);
     $insertId = $wpdb->insert_id;
