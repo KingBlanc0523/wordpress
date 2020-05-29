@@ -815,6 +815,7 @@ if ( !class_exists( 'TC_Speakers' ) ) {
             $tc_speakers_view = get_post_meta( $post->ID, 'tc_speakers_view', true );
             $tc_speakers_grid_num = get_post_meta( $post->ID, 'tc_speakers_grid_num', true );
             $tc_speakers_grid_show_cats = get_post_meta( $post->ID, 'tc_speakers_grid_show_cats', true );
+
             if ( $tc_speakers_show_type == '' || !isset( $tc_speakers_show_type ) ) {
                 $tc_speakers_show_type = 'automatic';
             }
@@ -882,7 +883,7 @@ if ( !class_exists( 'TC_Speakers' ) ) {
                 <label><?php 
             _e( 'Show Categories', 'tcsp' );
             ?></label>
-                <div class="tc-input-radio-wrap"><input type="radio" <?php 
+                <div class="tc-input-radio-wrap"><input type="radio" <?php
             echo  ( $tc_speakers_grid_show_cats == 'yes' || empty($tc_speakers_grid_show_cats) ? 'checked' : '' ) ;
             ?> name="tc_speakers_grid_show_cats_post_meta" value="yes"><?php 
             _e( 'Yes', 'tcsp' );

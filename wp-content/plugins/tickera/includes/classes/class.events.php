@@ -23,6 +23,15 @@ if (!class_exists('TC_Events')) {
 
             $default_fields = array(
                 array(
+                    'field_name' => 'event_synopsis',
+                    'field_title' => __('Synopsis', 'tc'),
+                    'field_type' => 'textarea_editor',
+                    'tooltip' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => true
+                ),
+                array(
                     'field_name' => 'post_title',
                     'field_title' => __('Event Name', 'tc'),
                     'field_type' => 'text',
@@ -37,6 +46,15 @@ if (!class_exists('TC_Events')) {
                     'field_type' => 'text',
                     'tooltip' => sprintf(__('Location of your event. This field could be shown on a %sticket template%s and/or on the event\'s page via shortcode builder (located above the main content editor). Example: Grosvenor Square, Mayfair, London', 'tc'), '<a href="' . admin_url('edit.php?post_type=tc_events&page=tc_ticket_templates') . '" target="_blank">', '</a>'),
                     'table_visibility' => true,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => true
+                ),
+                array(
+                    'field_name' => 'detail_address',
+                    'field_title' => __('Detail Address', 'tc'),
+                    'field_type' => 'text',
+                    'tooltip' => '',
+                    'table_visibility' => false,
                     'post_field_type' => 'post_meta',
                     'show_in_post_type' => true
                 ),
@@ -69,6 +87,7 @@ if (!class_exists('TC_Events')) {
                     'post_field_type' => 'post_meta',
                     'show_in_post_type' => true
                 ),
+
                 array(
                     'field_name' => 'event_logo',
                     'field_title' => __('Event Logo', 'tc'),
@@ -87,6 +106,42 @@ if (!class_exists('TC_Events')) {
                     'post_field_type' => 'post_meta',
                     'show_in_post_type' => true
                 ),
+                array(
+                    'field_name' => 'star_name',
+                    'field_title' => __('Star Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'event_short_name',
+                    'field_title' => __('Event Short  Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'city_name',
+                    'field_title' => __('City Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'price',
+                    'field_title' => __('Price', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                )
             );
 
             return apply_filters('tc_event_fields', $default_fields);
