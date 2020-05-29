@@ -8,27 +8,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<link rel="icon" href="img/page_logo.jpg">
+	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/page_logo.jpg">
 	<title>Juicy Music</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
 
 	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.theme.default.css" />
 
 	<!-- Magnific Popup -->
-	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/magnific-popup.css" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +42,7 @@
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/Mchotdog.jpeg');">
+		<div class="bg-img" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -56,8 +56,8 @@
 						<!-- Logo -->
 						<div class="navbar-brand">
 							<a>
-								<img class="logo" src="img/juicymusiclogo3.jpg" alt="logo">
-								<img class="logo-alt" src="img/juicymusiclogo3.jpg" alt="logo">
+								<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/juicymusiclogo3.jpg" alt="logo">
+								<img class="logo-alt" src="<?php bloginfo('template_directory'); ?>/img/juicymusiclogo3.jpg" alt="logo">
 							</a>
 						</div>
 						<!-- /Logo -->
@@ -134,7 +134,7 @@
 
 				<!-- Picture -->
 				<div class="col-md-5 col-xs-6 work">
-					<img class="img-responsive" src="./img/Mchotdog.jpeg" alt="">
+					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
 				</div>
 				<!-- /Picture -->
 
@@ -177,7 +177,7 @@
 				<!-- Work Template-->
 <!-- 				<div class ="col-md-4 col-xs-6">
 					<div class="work work-date">
-						<img class="img-responsive img-work" src="./img/yangqianhua_square.jpg" alt="">
+						<img class="img-responsive img-work" src="./<?php bloginfo('template_directory'); ?>/img/yangqianhua_square.jpg" alt="">
 						<div class="overlay"></div>
 						<div class="work-content">
 							<span>杨千嬅</span>
@@ -202,7 +202,7 @@
 				<!-- Work -->
 				<div class ="col-md-4 col-xs-6">
 					<div class="work work-date">
-						<img class="img-responsive img-work" src="./img/Mchotdog.jpeg" alt="">
+						<img class="img-responsive img-work" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
 						<div class="overlay"></div>
 						<div class="work-content">
 							<span>McHotDog</span>
@@ -228,7 +228,7 @@
 				<!-- Work -->
 				<div class ="col-md-4 col-xs-6">
 					<div class="work work-date">
-						<img class="img-responsive img-work" src="./img/BrokenHeartMuseum.jpeg" alt="">
+						<img class="img-responsive img-work" src="<?php bloginfo('template_directory'); ?>/img/BrokenHeartMuseum.jpeg" alt="">
 						<div class="overlay"></div>
 						<div class="work-content">
 							<span>许捷许仙僧</span>
@@ -267,7 +267,7 @@
 							</p>
         				</div>
         				<div>
-        					<img class="img-responsive" src="./img/Mchotdog.jpeg" alt="">
+        					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
         				</div>
         				<div class="modal-footer">
          					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -276,7 +276,7 @@
     			</div>
   			</div>
 			<!-- /Modal1 -->
-			  
+
 			<!-- Modal2 -->
   			<div class="modal fade" id="modal2" role="dialog">
     			<div class="modal-dialog">
@@ -297,7 +297,7 @@
 							</p>
         				</div>
         				<div>
-        					<img class="img-responsive" src="./img/BrokenHeartMuseum.jpeg" alt="">
+        					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/BrokenHeartMuseum.jpeg" alt="">
         				</div>
         				<div class="modal-footer">
          					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -345,7 +345,7 @@
 					<div class="about">
 						<i class="fa fa-support"></i>
 						<h3>经纪代理</h3>
-						<p>中国移动, 诺基亚, 摩托罗拉, 巴黎欧莱雅, 苏宁电器, 创维, 爱玛, 雀巢, 可口可乐, 乐天, 蒙牛, 
+						<p>中国移动, 诺基亚, 摩托罗拉, 巴黎欧莱雅, 苏宁电器, 创维, 爱玛, 雀巢, 可口可乐, 乐天, 蒙牛,
 						伊利, 喜之郎, 美特斯邦威, 特步, 德尔惠, 康师傅, 达利食品, 雪碧, 唯品会, 百雀羚, 英雄联盟等广告代言, 涉及各个领</p>
 					</div>
 				</div>
@@ -412,14 +412,14 @@
 				<!-- About slider -->
 				<div class="col-md-6">
 					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="./img/poster_dengziqi2.jpg" alt="">
-						<img class="img-responsive" src="./img/poster_jay2.jpg" alt="">
-						<img class="img-responsive" src="./img/about5.jpg" alt="">
-						<img class="img-responsive" src="./img/about2.jpg" alt="">
-						<img class="img-responsive" src="./img/about3.jpg" alt="">
-						<img class="img-responsive" src="./img/poster_zhang2.jpg" alt="">
-						<img class="img-responsive" src="./img/about4.jpg" alt="">
-						<img class="img-responsive" src="./img/feiyuqing.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/poster_dengziqi2.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/poster_jay2.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/about5.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/about2.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/about3.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/poster_zhang2.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/about4.jpg" alt="">
+						<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/feiyuqing.jpg" alt="">
 					</div>
 				</div>
 				<!-- /About slider -->
@@ -438,7 +438,7 @@
 	<div id="numbers" class="section sm-padding">
 
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background_zhang2.jpg');">
+		<div class="bg-img" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/background_zhang2.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -519,21 +519,21 @@
 				<div class ="row" style="margin-left:0px;margin-right:0px;">
 					<!-- service -->
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/jiaheng_logo.jpg" alt=""
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/jiaheng_logo.jpg" alt=""
 						style ="margin-top:60px">
 					</div>
 					<!-- /service -->
 
 					<!-- service -->
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/travel_logo.jpg" alt=""
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/travel_logo.jpg" alt=""
 						style ="margin-top:60px">
 					</div>
 					<!-- /service -->
 
 					<!-- service -->
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/v_logo.jpg" alt=""
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/v_logo.jpg" alt=""
 						style ="margin-top:60px">
 					</div>
 					<!-- /service -->
@@ -541,21 +541,21 @@
 				<div class ="row" style="margin-left:0px;margin-right:0px;">
 					<!-- service -->
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/nder_logo.jpg" alt=""
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/nder_logo.jpg" alt=""
 						style ="margin-top:84px">
 					</div>
 					<!-- /service -->
 
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/eat_logo.jpg" alt=""
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/eat_logo.jpg" alt=""
 						style ="margin-top:45px">
 					</div>
 					<!-- /service -->
 
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
-						<img class="img-responsive img-sponsor" src="./img/sponsor/mei_logo.jpg" alt="">
+						<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/mei_logo.jpg" alt="">
 					</div>
 					<!-- /service -->
 				</div>
@@ -564,7 +564,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/zenq_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/zenq_logo.jpg" alt=""
 							style ="margin-top:110px">
 						</div>
 					</div>
@@ -573,7 +573,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/logo_xuebeier.jpg" alt="">
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/logo_xuebeier.jpg" alt="">
 						</div>
 					</div>
 					<!-- /service -->
@@ -581,7 +581,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/liuyishou_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/liuyishou_logo.jpg" alt=""
 							style ="margin-top:20px">
 						</div>
 					</div>
@@ -592,7 +592,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/imaginarium_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/imaginarium_logo.jpg" alt=""
 							style ="margin-top:105px">
 						</div>
 					</div>
@@ -601,7 +601,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/momosnail_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/momosnail_logo.jpg" alt=""
 							style ="margin-top:85px">
 						</div>
 					</div>
@@ -610,7 +610,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/zhouji_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/zhouji_logo.jpg" alt=""
 							style ="margin-top:45px">
 						</div>
 					</div>
@@ -621,7 +621,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/sponsor/fruit_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/sponsor/fruit_logo.jpg" alt=""
 							style ="margin-top:55px">
 						</div>
 					</div>
@@ -655,7 +655,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/logo_shiji.jpg" alt="">
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/logo_shiji.jpg" alt="">
 						</div>
 					</div>
 					<!-- /service -->
@@ -663,7 +663,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/logo_youpinhui.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/logo_youpinhui.jpg" alt=""
 							style ="margin-top:45px">
 						</div>
 					</div>
@@ -672,19 +672,19 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/logo_jiaxi.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/logo_jiaxi.jpg" alt=""
 							style ="margin-top:90px">
 						</div>
 					</div>
 					<!-- /service -->
 				</div>
 
-				
+
 				<div class ="row" style="margin-left:0px;margin-right:0px;">
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/logo_cityknows.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/logo_cityknows.jpg" alt=""
 							style ="margin-top:90px">
 						</div>
 					</div>
@@ -693,7 +693,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/vanpeople_logo.jpg" alt=""
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/vanpeople_logo.jpg" alt=""
 							style ="margin-top:80px">
 						</div>
 					</div>
@@ -702,7 +702,7 @@
 					<!-- service -->
 					<div class="col-md-4 col-sm-6">
 						<div class="sponsor">
-							<img class="img-responsive img-sponsor" src="./img/media/kabu_logo.jpg" alt="">
+							<img class="img-responsive img-sponsor" src="<?php bloginfo('template_directory'); ?>/img/media/kabu_logo.jpg" alt="">
 						</div>
 					</div>
 					<!-- /service -->
@@ -763,21 +763,21 @@
 				<!-- /contact -->
 
 				<!-- google map -->
-    			<div class="col-md-12">
-    				<div id="map">
-    					<script>
-						function initMap() {
-  							var juicymusic = {lat: 49.178518, lng: -123.122391};
-  							var map = new google.maps.Map(
-      						document.getElementById('map'), {zoom: 13, center: juicymusic});
-  							var marker = new google.maps.Marker({position: juicymusic, map: map});
-  						}
-    					</script>
-    					<script async defer
-    						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwGtyukZeJRwoaVqPCf06MbweJOBs9lYM&callback=initMap">
-    					</script>
-    				</div>
-				</div>
+<!--    			<div class="col-md-12">-->
+<!--    				<div id="map">-->
+<!--    					<script>-->
+<!--						function initMap() {-->
+<!--  							var juicymusic = {lat: 49.178518, lng: -123.122391};-->
+<!--  							var map = new google.maps.Map(-->
+<!--      						document.getElementById('map'), {zoom: 13, center: juicymusic});-->
+<!--  							var marker = new google.maps.Marker({position: juicymusic, map: map});-->
+<!--  						}-->
+<!--    					</script>-->
+<!--    					<script async defer-->
+<!--    						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwGtyukZeJRwoaVqPCf06MbweJOBs9lYM&callback=initMap">-->
+<!--    					</script>-->
+<!--    				</div>-->
+<!--				</div>-->
 				<!-- /google map -->
 
 			</div>
@@ -803,7 +803,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<img class = "footer-img" src="img/footer_logo.png" alt="logo">
+						<img class = "footer-img" src="<?php bloginfo('template_directory'); ?>/img/footer_logo.png" alt="logo">
 					</div>
 					<!-- /footer logo -->
 
@@ -847,11 +847,11 @@
 	<!-- /Preloader -->
 
 	<!-- jQuery Plugins -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
 </body>
 
