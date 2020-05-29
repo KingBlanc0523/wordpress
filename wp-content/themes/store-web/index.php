@@ -1,4 +1,18 @@
-﻿
+﻿<?php
+global $wpdb;
+//获取events信息
+$events = $wpdb->get_results("select wp.* from w_posts wp where wp.post_type = 'tc_events' and wp.post_status='publish'");
+$events_show = [];
+foreach ($events as $val) {
+    $value = (array)$val;
+    $events_metas = $wpdb->get_results("select meta_key,meta_value from w_postmeta where post_id = {$value['ID']}");
+    foreach($events_metas as $k => $v){
+        $v = (array)$v;
+        $value['events_metas'][$v['meta_key']] = $v['meta_value'];
+    }
+    $events_show[] = $value;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,7 +148,7 @@
 
 				<!-- Picture -->
 				<div class="col-md-5 col-xs-6 work">
-					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
+					<img class="img-responsive" src="<?php echo $events_show[0]['events_metas']['event_logo_file_url'] ?>" alt="">
 				</div>
 				<!-- /Picture -->
 
@@ -142,7 +156,7 @@
 				<div class="col-md-7">
 					<div class="feature">
 						</br>
-						<p class="model-text">MC Hotdog，台湾饶舌歌手。2000年，签约加入魔岩唱片旗下的“大马戏团”音乐工作室。2001年，连续发行四张EP。2004年10月，受美国最大Pub连锁“House of Blues”邀请，与张震岳一起前往美国十大城市演出。2006年1月，推出个人首张专辑《Wake Up》。 2007年6月，凭借《Wake Up》获得第18届金曲奖最佳国语专辑奖。2008年10月，发行第二张个人专辑《差不多先生》。2014年，参与制作索契冬奥会主题曲。02015年，宣布同张震岳，顽童MJ116启动“兄弟本色”全球巡演。2016年5月，参与制作电影《魔兽》的中文推广曲《We Will Rule背水一战》。2017年5月 ，MC Hotdog作为导师参与了《中国有嘻哈》的录制。						</br>
+						<p class="model-text">	<?php  echo $events_show[0]['events_metas']['event_synopsis'];?></br>
 						</p>
 					</div>
 					<button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
@@ -199,59 +213,85 @@
 				</div> -->
 				<!-- /Work Template-->
 
+                <?php foreach ($events_show as $key => $val) { ?>
+                    <div class ="col-md-4 col-xs-6">
+                        <div class="work work-date">
+                            <img class="img-responsive img-work" src="<?php echo $val['events_metas']['event_logo_file_url']?>" alt="">
+                            <div class="overlay"></div>
+                            <div class="work-content">
+                                <span><?php echo $val['events_metas']['star_name']?></span>
+                                <h3>《<?php echo $val['events_metas']['event_short_name']?>》</br><?php echo $val['events_metas']['city_name']?>站</h3>
+                                <div class="work-link">
+                                    <a data-toggle="modal" data-target="#modal<?php echo $key;?>"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>时间：<?php echo $val['events_metas']['event_date_time'].'-'.$val['events_metas']['event_end_date_time']?>
+                                </br>地点：Vogue
+                                </br>地址：<a href ="https://goo.gl/maps/r2TsEgpMaaUavABn6"><?php echo $val['events_metas']['event_location'] ?></a>
+                                </br>票价：CA$48.16
+                                </br>
+                                </br>
+                                </br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+                            </p>
+                        </div>
+                    </div>
+                <?php } ?>
 				<!-- Work -->
-				<div class ="col-md-4 col-xs-6">
-					<div class="work work-date">
-						<img class="img-responsive img-work" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
-						<div class="overlay"></div>
-						<div class="work-content">
-							<span>McHotDog</span>
-							<h3>《Young Losers》</br>温哥华站</h3>
-							<div class="work-link">
-								<a data-toggle="modal" data-target="#modal1"><i class="fa fa-external-link"></i></a>
-							</div>
-						</div>
-					</div>
-					<div>
-						<p>时间：3月27日 7:00pm-10:00pm
-						</br>地点：Vogue
-						</br>地址：<a href ="https://goo.gl/maps/r2TsEgpMaaUavABn6">918 Granville St, Vancouver</a>
-						</br>票价：CA$48.16
-						</br>
-						</br>
-						</br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
-						</p>
-					</div>
-				</div>
+<!--				<div class ="col-md-4 col-xs-6">-->
+<!--					<div class="work work-date">-->
+<!--						<img class="img-responsive img-work" src="--><?php //bloginfo('template_directory'); ?><!--/img/Mchotdog.jpeg" alt="">-->
+<!--						<div class="overlay"></div>-->
+<!--						<div class="work-content">-->
+<!--							<span>McHotDog</span>-->
+<!--							<h3>《Young Losers》</br>温哥华站</h3>-->
+<!--							<div class="work-link">-->
+<!--								<a data-toggle="modal" data-target="#modal1"><i class="fa fa-external-link"></i></a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div>-->
+<!--						<p>时间：3月27日 7:00pm-10:00pm-->
+<!--						</br>地点：Vogue-->
+<!--						</br>地址：<a href ="https://goo.gl/maps/r2TsEgpMaaUavABn6">918 Granville St, Vancouver</a>-->
+<!--						</br>票价：CA$48.16-->
+<!--						</br>-->
+<!--						</br>-->
+<!--						</br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>-->
+<!--						</p>-->
+<!--					</div>-->
+<!--				</div>-->
 				<!-- /Work -->
 
 				<!-- Work -->
-				<div class ="col-md-4 col-xs-6">
-					<div class="work work-date">
-						<img class="img-responsive img-work" src="<?php bloginfo('template_directory'); ?>/img/BrokenHeartMuseum.jpeg" alt="">
-						<div class="overlay"></div>
-						<div class="work-content">
-							<span>许捷许仙僧</span>
-							<h3>《失恋博物馆》</br>温哥华站</h3>
-							<div class="work-link">
-								<a data-toggle="modal" data-target="#modal2"><i class="fa fa-external-link"></i></a>
-							</div>
-						</div>
-					</div>
-					<div>
-						<p>时间：2月15日 - 3月15日
-						</br>地点：11860 Hammersmith Way, Richmond
-						</br>地址：<a href ="https://goo.gl/maps/4UuWkEyWCAodnpPP9">173-11860 Hammersmith Way, Richmond</a>
-						</br>票价：CA$44.00
-						</br>
-						</br><button class="black-btn" onclick="window.location.href='https://www.chumi.co/post/xu-jie-xu-xian-seng-zhi-shi-lian-bo-wu-guan-02-15-2020-wen-ge-hua-zhan-5e001598cd1fa0578ed42e26'">线上购票</button>
-						</p>
-					</div>
-				</div>
+<!--				<div class ="col-md-4 col-xs-6">-->
+<!--					<div class="work work-date">-->
+<!--						<img class="img-responsive img-work" src="--><?php //bloginfo('template_directory'); ?><!--/img/BrokenHeartMuseum.jpeg" alt="">-->
+<!--						<div class="overlay"></div>-->
+<!--						<div class="work-content">-->
+<!--							<span>许捷许仙僧</span>-->
+<!--							<h3>《失恋博物馆》</br>温哥华站</h3>-->
+<!--							<div class="work-link">-->
+<!--								<a data-toggle="modal" data-target="#modal2"><i class="fa fa-external-link"></i></a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div>-->
+<!--						<p>时间：2月15日 - 3月15日-->
+<!--						</br>地点：11860 Hammersmith Way, Richmond-->
+<!--						</br>地址：<a href ="https://goo.gl/maps/4UuWkEyWCAodnpPP9">173-11860 Hammersmith Way, Richmond</a>-->
+<!--						</br>票价：CA$44.00-->
+<!--						</br>-->
+<!--						</br><button class="black-btn" onclick="window.location.href='https://www.chumi.co/post/xu-jie-xu-xian-seng-zhi-shi-lian-bo-wu-guan-02-15-2020-wen-ge-hua-zhan-5e001598cd1fa0578ed42e26'">线上购票</button>-->
+<!--						</p>-->
+<!--					</div>-->
+<!--				</div>-->
 				<!-- /Work -->
 
 			</div>
 			<!-- /Row -->
+
 
   			<!-- Modal1 -->
   			<div class="modal fade" id="modal1" role="dialog">

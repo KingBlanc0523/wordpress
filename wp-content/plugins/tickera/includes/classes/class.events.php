@@ -23,6 +23,15 @@ if (!class_exists('TC_Events')) {
 
             $default_fields = array(
                 array(
+                    'field_name' => 'event_synopsis',
+                    'field_title' => __('Synopsis', 'tc'),
+                    'field_type' => 'textarea_editor',
+                    'tooltip' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => true
+                ),
+                array(
                     'field_name' => 'post_title',
                     'field_title' => __('Event Name', 'tc'),
                     'field_type' => 'text',
@@ -69,6 +78,7 @@ if (!class_exists('TC_Events')) {
                     'post_field_type' => 'post_meta',
                     'show_in_post_type' => true
                 ),
+
                 array(
                     'field_name' => 'event_logo',
                     'field_title' => __('Event Logo', 'tc'),
@@ -87,6 +97,33 @@ if (!class_exists('TC_Events')) {
                     'post_field_type' => 'post_meta',
                     'show_in_post_type' => true
                 ),
+                array(
+                    'field_name' => 'star_name',
+                    'field_title' => __('Star Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'event_short_name',
+                    'field_title' => __('Event Short  Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'city_name',
+                    'field_title' => __('City Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                )
             );
 
             return apply_filters('tc_event_fields', $default_fields);
