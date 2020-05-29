@@ -738,7 +738,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 		}
 		foreach ( $posts as $post ) {
             //kingblanc editor
-            if($post->post_title=='Temporarily Unavailable Seats'){
+            if($post->post_title=='Temporarily Unavailable Seats' || $post->post_title=='Send Tickets to User'){
                 continue;
             }
 			$this->single_row( $post, $level );
