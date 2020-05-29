@@ -9,7 +9,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/page_logo.jpg">
-	<title>Juicy Music</title>
+	<title>ChuMi</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -71,10 +71,10 @@
 
 					<!--  Main navigation  -->
 					<ul class="main-nav nav navbar-nav navbar-right">
-						<li><a href="#home">巨室主页</a></li>
+						<li><a href="#home">chumi主页</a></li>
 						<li><a href="#main-event">主办活动</a></li>
 						<li><a href="#portfolio">近期活动</a></li>
-						<li><a href="#about">关于巨室</a></li>
+						<li><a href="#about">关于chumi</a></li>
 						<li><a href="#service">战略伙伴</a></li>
 						<li><a href="#media">传媒合作</a></li>
 						<li><a href="#contact">联系我们</a></li>
@@ -94,7 +94,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">Juicy Music 娱乐制作</h1>
+							<h1 class="white-text">ChuMi 娱乐制作</h1>
 							<p class="white-text">“潜心十六年 演艺界的巨型航母 浮出水面”
 							</p>
 							<h2 class="red-text"></h2>
@@ -324,7 +324,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">关于巨室音乐</h2>
+					<h2 class="title">关于chumi音乐</h2>
 				</div>
 				<!-- /Section header -->
 
