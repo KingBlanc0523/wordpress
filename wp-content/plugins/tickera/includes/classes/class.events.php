@@ -50,6 +50,15 @@ if (!class_exists('TC_Events')) {
                     'show_in_post_type' => true
                 ),
                 array(
+                    'field_name' => 'detail_address',
+                    'field_title' => __('Detail Address', 'tc'),
+                    'field_type' => 'text',
+                    'tooltip' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => true
+                ),
+                array(
                     'field_name' => 'event_date_time',
                     'field_title' => __('Start Date & Time', 'tc'),
                     'field_type' => 'text',
@@ -118,6 +127,15 @@ if (!class_exists('TC_Events')) {
                 array(
                     'field_name' => 'city_name',
                     'field_title' => __('City Name', 'tc'),
+                    'field_type' => 'text',
+                    'field_description' => '',
+                    'table_visibility' => false,
+                    'post_field_type' => 'post_meta',
+                    'show_in_post_type' => false
+                ),
+                array(
+                    'field_name' => 'price',
+                    'field_title' => __('Price', 'tc'),
                     'field_type' => 'text',
                     'field_description' => '',
                     'table_visibility' => false,

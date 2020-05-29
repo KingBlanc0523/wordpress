@@ -214,6 +214,9 @@ if (!class_exists('TC_Better_Events')) {
                 delete_post_meta($new_post_id, 'show_tickets_automatically');
                 update_post_meta($new_post_id, 'show_tickets_automatically', $show_tickets_automatically_old);
 
+                delete_post_meta($new_post_id, 'recommand_this_event');
+                update_post_meta($new_post_id, 'recommand_this_event', 1);
+
                 do_action('tc_after_event_duplication', $new_post_id, $post_id, $caller, $caller_id, $old_caller_id);
                 /*
                  * finally, redirect to the edit post screen for the new draft
@@ -803,6 +806,14 @@ if (!class_exists('TC_Better_Events')) {
 
                     <span id="post_event_append_tickets"><input type="checkbox" id="hide_event_after_expiration" name="hide_event_after_expiration" value="1" <?php checked($hide_event_after_expiration, true, true); ?> />
                         <label for="hide_event_after_expiration"><span></span><?php _e('Hide event after expiration', 'tc'); ?></label>
+                    </span>
+
+                </div>
+
+                <div class="misc-pub-section event_append_tickets" id="append_tickets">
+
+                    <span id="post_event_append_tickets"><input type="checkbox" id="recommand_this_event" name="recommand_this_event" value="1" <?php checked(1, true, true); ?> />
+                        <label for="hide_event_after_expiration"><span></span><?php _e('Recommand this event', 'tc'); ?></label>
                     </span>
 
                 </div>
