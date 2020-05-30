@@ -169,7 +169,7 @@ if (!$recommand_event) {
 						<p class="model-text">	<?php  echo $recommand_event['events_metas']['event_synopsis'];?></br>
 						</p>
 					</div>
-					<button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+					<button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$recommand_event['ID'];?>'">线上购票</button>
 					<!-- <a href="/forms/XinShuoChangRegisterForm.pdf" class="black-btn btn btn-xl" download></a> -->
 				</div>
 				<!-- /why choose us content -->
@@ -243,7 +243,7 @@ if (!$recommand_event) {
                                 </br>票价：CA$<?php echo $val['events_metas']['price'] ?>
                                 </br>
                                 </br>
-                                </br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+                                </br><button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$val['ID'];?>'">线上购票</button>
                             </p>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ if (!$recommand_event) {
                             </div>
                             <div class="modal-body">
                                 <p class="model-text"><?php echo $val['events_metas']['event_synopsis']; ?></br>
-                                    <button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+                                    <button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$val['ID'];?>'">线上购票</button>
                                 </p>
                             </div>
                             <div>
@@ -275,39 +275,6 @@ if (!$recommand_event) {
                     </div>
                 </div>
             <?php } ?>
-  			<!-- Modal1 -->
-
-			<!-- /Modal1 -->
-
-			<!-- Modal2 -->
-  			<div class="modal fade" id="modal2" role="dialog">
-    			<div class="modal-dialog">
-      				<div class="modal-content">
-        				<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-      						<h4 class="modal-title">《失恋博物馆》&ensp;温哥华站</h4>
-   						</div>
-        				<div class="modal-body">
-          					<p class="model-text">失恋博物馆 是由哔哩哔哩许捷许仙僧主办的以失恋物品为主题的创意文化展览。展览主要内容为各地粉丝网友所捐赠的和自己失恋或前任相关的失恋物品，每件失恋物品背后都有对应的感人故事 。在成都、西安、天津、重庆、永川、海口、苏州、杭州、昆明、呼和浩特、广州、哈尔滨等地同步开展。其他城市的展览也在陆续筹备即将在温哥华的2020年举办。
-								<br>
-								许捷许仙僧失恋博物馆首站展览于2018年12月份在成都举办。开展20天累计观展人数2.4万人，抖音平台相关话题浏览量破1亿次。
-								<br>
-								2019年5月1日起成都复展，全国12个城市同步开启巡展。许捷许仙僧失恋博物馆邀请并收藏来自各地的人们提供的恋爱纪念品及其背后的故事，希望用此方式让失恋者们——放下治愈，重新开始。
-								<br>
-								许捷许仙僧失恋博物馆共设6大主题内容区域，分别是失恋展品、扎心语录、互动寄语、粉红少女、快乐柠黄与海蓝梦想区。许捷许仙僧失恋博物馆还为年轻群体打造了色彩治愈区
-								<button class="black-btn" onclick="window.location.href='https://www.chumi.co/post/xu-jie-xu-xian-seng-zhi-shi-lian-bo-wu-guan-02-15-2020-wen-ge-hua-zhan-5e001598cd1fa0578ed42e26'">线上购票</button>
-							</p>
-        				</div>
-        				<div>
-        					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/BrokenHeartMuseum.jpeg" alt="">
-        				</div>
-        				<div class="modal-footer">
-         					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				</div>
-      				</div>
-    			</div>
-  			</div>
-  			<!-- /Modal2 -->
 
 		</div>
 		<!-- /Container -->
