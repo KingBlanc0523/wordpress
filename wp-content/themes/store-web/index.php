@@ -1,8 +1,10 @@
 ﻿<?php
 global $wpdb;
 //获取events信息
-$events = $wpdb->get_results("select wp.* from w_posts wp where wp.post_type = 'tc_events' and wp.post_status='publish'");
+$events = $wpdb->get_results("select wp.* from w_posts wp where wp.post_type = 'tc_events' and wp.post_status='publish' order by wp.ID desc");
 $events_show = [];
+$recommand_event = false;
+
 foreach ($events as $val) {
     $value = (array)$val;
     $events_metas = $wpdb->get_results("select meta_key,meta_value from w_postmeta where post_id = {$value['ID']}");
@@ -11,7 +13,15 @@ foreach ($events as $val) {
         $value['events_metas'][$v['meta_key']] = $v['meta_value'];
     }
     $events_show[] = $value;
+    if (!$recommand_event && $value['events_metas']['show_tickets_automatically'] == '1') {
+        $recommand_event = $value;
+    }
 }
+
+if (!$recommand_event) {
+    $recommand_event = $events_show[0];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -148,7 +158,7 @@ foreach ($events as $val) {
 
 				<!-- Picture -->
 				<div class="col-md-5 col-xs-6 work">
-					<img class="img-responsive" src="<?php echo $events_show[0]['events_metas']['event_logo_file_url'] ?>" alt="">
+					<img class="img-responsive" src="<?php echo $recommand_event['events_metas']['event_logo_file_url'] ?>" alt="">
 				</div>
 				<!-- /Picture -->
 
@@ -156,7 +166,7 @@ foreach ($events as $val) {
 				<div class="col-md-7">
 					<div class="feature">
 						</br>
-						<p class="model-text">	<?php  echo $events_show[0]['events_metas']['event_synopsis'];?></br>
+						<p class="model-text">	<?php  echo $recommand_event['events_metas']['event_synopsis'];?></br>
 						</p>
 					</div>
 					<button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
