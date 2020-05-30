@@ -787,6 +787,8 @@ if (!class_exists('TC_Better_Events')) {
                     $show_tickets_automatically = false;
                 }
 
+
+
                 /*if (current_user_can(apply_filters('tc_event_activation_capability', 'edit_others_events')) || current_user_can('manage_options')) {
                     ?>
                     <div class="misc-pub-section misc-pub-visibility-activity" id="visibility">
@@ -797,7 +799,7 @@ if (!class_exists('TC_Better_Events')) {
                 <div class="misc-pub-section event_append_tickets" id="append_tickets">
 
                     <span id="post_event_append_tickets"><input type="checkbox" id="show_tickets_automatically" name="show_tickets_automatically" value="1" <?php checked($show_tickets_automatically, true, true); ?> />
-                        <label for="show_tickets_automatically"><span></span><?php _e('Show Tickets Automatically', 'tc'); ?></label>
+                        <label for="show_tickets_automatically"><span></span><?php _e('Recommand this event', 'tc'); ?></label>
                     </span>
 
                 </div>
@@ -806,14 +808,6 @@ if (!class_exists('TC_Better_Events')) {
 
                     <span id="post_event_append_tickets"><input type="checkbox" id="hide_event_after_expiration" name="hide_event_after_expiration" value="1" <?php checked($hide_event_after_expiration, true, true); ?> />
                         <label for="hide_event_after_expiration"><span></span><?php _e('Hide event after expiration', 'tc'); ?></label>
-                    </span>
-
-                </div>
-
-                <div class="misc-pub-section event_append_tickets" id="append_tickets">
-
-                    <span id="post_event_append_tickets"><input type="checkbox" id="recommand_this_event" name="recommand_this_event" value="1" <?php checked(1, true, true); ?> />
-                        <label for="hide_event_after_expiration"><span></span><?php _e('Recommand this event', 'tc'); ?></label>
                     </span>
 
                 </div>

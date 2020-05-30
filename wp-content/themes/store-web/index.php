@@ -1,8 +1,10 @@
 ﻿<?php
 global $wpdb;
 //获取events信息
-$events = $wpdb->get_results("select wp.* from w_posts wp where wp.post_type = 'tc_events' and wp.post_status='publish'");
+$events = $wpdb->get_results("select wp.* from w_posts wp where wp.post_type = 'tc_events' and wp.post_status='publish' order by wp.ID desc");
 $events_show = [];
+$recommand_event = false;
+
 foreach ($events as $val) {
     $value = (array)$val;
     $events_metas = $wpdb->get_results("select meta_key,meta_value from w_postmeta where post_id = {$value['ID']}");
@@ -11,7 +13,15 @@ foreach ($events as $val) {
         $value['events_metas'][$v['meta_key']] = $v['meta_value'];
     }
     $events_show[] = $value;
+    if (!$recommand_event && $value['events_metas']['show_tickets_automatically'] == '1') {
+        $recommand_event = $value;
+    }
 }
+
+if (!$recommand_event) {
+    $recommand_event = $events_show[0];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -148,7 +158,7 @@ foreach ($events as $val) {
 
 				<!-- Picture -->
 				<div class="col-md-5 col-xs-6 work">
-					<img class="img-responsive" src="<?php echo $events_show[0]['events_metas']['event_logo_file_url'] ?>" alt="">
+					<img class="img-responsive" src="<?php echo $recommand_event['events_metas']['event_logo_file_url'] ?>" alt="">
 				</div>
 				<!-- /Picture -->
 
@@ -156,10 +166,10 @@ foreach ($events as $val) {
 				<div class="col-md-7">
 					<div class="feature">
 						</br>
-						<p class="model-text">	<?php  echo $events_show[0]['events_metas']['event_synopsis'];?></br>
+						<p class="model-text">	<?php  echo $recommand_event['events_metas']['event_synopsis'];?></br>
 						</p>
 					</div>
-					<button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+					<button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$recommand_event['ID'];?>'">线上购票</button>
 					<!-- <a href="/forms/XinShuoChangRegisterForm.pdf" class="black-btn btn btn-xl" download></a> -->
 				</div>
 				<!-- /why choose us content -->
@@ -228,124 +238,43 @@ foreach ($events as $val) {
                         </div>
                         <div>
                             <p>时间：<?php echo $val['events_metas']['event_date_time'].'-'.$val['events_metas']['event_end_date_time']?>
-                                </br>地点：Vogue
+                                </br>地点：<?php echo $val['events_metas']['detail_address']?>
                                 </br>地址：<a href ="https://goo.gl/maps/r2TsEgpMaaUavABn6"><?php echo $val['events_metas']['event_location'] ?></a>
-                                </br>票价：CA$48.16
+                                </br>票价：CA$<?php echo $val['events_metas']['price'] ?>
                                 </br>
                                 </br>
-                                </br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
+                                </br><button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$val['ID'];?>'">线上购票</button>
                             </p>
                         </div>
                     </div>
                 <?php } ?>
-				<!-- Work -->
-<!--				<div class ="col-md-4 col-xs-6">-->
-<!--					<div class="work work-date">-->
-<!--						<img class="img-responsive img-work" src="--><?php //bloginfo('template_directory'); ?><!--/img/Mchotdog.jpeg" alt="">-->
-<!--						<div class="overlay"></div>-->
-<!--						<div class="work-content">-->
-<!--							<span>McHotDog</span>-->
-<!--							<h3>《Young Losers》</br>温哥华站</h3>-->
-<!--							<div class="work-link">-->
-<!--								<a data-toggle="modal" data-target="#modal1"><i class="fa fa-external-link"></i></a>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div>-->
-<!--						<p>时间：3月27日 7:00pm-10:00pm-->
-<!--						</br>地点：Vogue-->
-<!--						</br>地址：<a href ="https://goo.gl/maps/r2TsEgpMaaUavABn6">918 Granville St, Vancouver</a>-->
-<!--						</br>票价：CA$48.16-->
-<!--						</br>-->
-<!--						</br>-->
-<!--						</br><button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>-->
-<!--						</p>-->
-<!--					</div>-->
-<!--				</div>-->
-				<!-- /Work -->
-
-				<!-- Work -->
-<!--				<div class ="col-md-4 col-xs-6">-->
-<!--					<div class="work work-date">-->
-<!--						<img class="img-responsive img-work" src="--><?php //bloginfo('template_directory'); ?><!--/img/BrokenHeartMuseum.jpeg" alt="">-->
-<!--						<div class="overlay"></div>-->
-<!--						<div class="work-content">-->
-<!--							<span>许捷许仙僧</span>-->
-<!--							<h3>《失恋博物馆》</br>温哥华站</h3>-->
-<!--							<div class="work-link">-->
-<!--								<a data-toggle="modal" data-target="#modal2"><i class="fa fa-external-link"></i></a>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div>-->
-<!--						<p>时间：2月15日 - 3月15日-->
-<!--						</br>地点：11860 Hammersmith Way, Richmond-->
-<!--						</br>地址：<a href ="https://goo.gl/maps/4UuWkEyWCAodnpPP9">173-11860 Hammersmith Way, Richmond</a>-->
-<!--						</br>票价：CA$44.00-->
-<!--						</br>-->
-<!--						</br><button class="black-btn" onclick="window.location.href='https://www.chumi.co/post/xu-jie-xu-xian-seng-zhi-shi-lian-bo-wu-guan-02-15-2020-wen-ge-hua-zhan-5e001598cd1fa0578ed42e26'">线上购票</button>-->
-<!--						</p>-->
-<!--					</div>-->
-<!--				</div>-->
-				<!-- /Work -->
-
 			</div>
 			<!-- /Row -->
 
 
-  			<!-- Modal1 -->
-  			<div class="modal fade" id="modal1" role="dialog">
-    			<div class="modal-dialog">
-      				<div class="modal-content">
-        				<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-      						<h4 class="modal-title">《Young Losers》&ensp;温哥华站</h4>
-   						</div>
-        				<div class="modal-body">
-          					<p class="model-text">MC Hotdog，台湾饶舌歌手。2000年，签约加入魔岩唱片旗下的“大马戏团”音乐工作室。2001年，连续发行四张EP。2004年10月，受美国最大Pub连锁“House of Blues”邀请，与张震岳一起前往美国十大城市演出。2006年1月，推出个人首张专辑《Wake Up》。 2007年6月，凭借《Wake Up》获得第18届金曲奖最佳国语专辑奖。2008年10月，发行第二张个人专辑《差不多先生》。2014年，参与制作索契冬奥会主题曲。02015年，宣布同张震岳，顽童MJ116启动“兄弟本色”全球巡演。2016年5月，参与制作电影《魔兽》的中文推广曲《We Will Rule背水一战》。2017年5月 ，MC Hotdog作为导师参与了《中国有嘻哈》的录制。 							</br></br>时间：3月27日 7:00-10:00pm</br>地点：Vogue Theatre</br>
-							<button class="black-btn" onclick="window.location.href='https://tickets.juicymusic.ca/post/mc-re-gou-hotdog-w-kenzy-mj116-03-27-20-young-losers-bei-mei-xun-yan-wen-ge-hua-zhan--5dfbf6b9cd1fa0578ed42e08'">线上购票</button>
-							</p>
-        				</div>
-        				<div>
-        					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/Mchotdog.jpeg" alt="">
-        				</div>
-        				<div class="modal-footer">
-         					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				</div>
-      				</div>
-    			</div>
-  			</div>
-			<!-- /Modal1 -->
-
-			<!-- Modal2 -->
-  			<div class="modal fade" id="modal2" role="dialog">
-    			<div class="modal-dialog">
-      				<div class="modal-content">
-        				<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-      						<h4 class="modal-title">《失恋博物馆》&ensp;温哥华站</h4>
-   						</div>
-        				<div class="modal-body">
-          					<p class="model-text">失恋博物馆 是由哔哩哔哩许捷许仙僧主办的以失恋物品为主题的创意文化展览。展览主要内容为各地粉丝网友所捐赠的和自己失恋或前任相关的失恋物品，每件失恋物品背后都有对应的感人故事 。在成都、西安、天津、重庆、永川、海口、苏州、杭州、昆明、呼和浩特、广州、哈尔滨等地同步开展。其他城市的展览也在陆续筹备即将在温哥华的2020年举办。
-								<br>
-								许捷许仙僧失恋博物馆首站展览于2018年12月份在成都举办。开展20天累计观展人数2.4万人，抖音平台相关话题浏览量破1亿次。
-								<br>
-								2019年5月1日起成都复展，全国12个城市同步开启巡展。许捷许仙僧失恋博物馆邀请并收藏来自各地的人们提供的恋爱纪念品及其背后的故事，希望用此方式让失恋者们——放下治愈，重新开始。
-								<br>
-								许捷许仙僧失恋博物馆共设6大主题内容区域，分别是失恋展品、扎心语录、互动寄语、粉红少女、快乐柠黄与海蓝梦想区。许捷许仙僧失恋博物馆还为年轻群体打造了色彩治愈区
-								<button class="black-btn" onclick="window.location.href='https://www.chumi.co/post/xu-jie-xu-xian-seng-zhi-shi-lian-bo-wu-guan-02-15-2020-wen-ge-hua-zhan-5e001598cd1fa0578ed42e26'">线上购票</button>
-							</p>
-        				</div>
-        				<div>
-        					<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/BrokenHeartMuseum.jpeg" alt="">
-        				</div>
-        				<div class="modal-footer">
-         					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				</div>
-      				</div>
-    			</div>
-  			</div>
-  			<!-- /Modal2 -->
+            <?php foreach($events_show as $key => $val){?>
+                <div class="modal fade" id="modal<?php echo $key?>" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">《<?php echo $val['events_metas']['event_short_name']?>》&ensp;<?php echo $val['events_metas']['city_name']?>站</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="model-text"><?php echo $val['events_metas']['event_synopsis']; ?></br>
+                                    <button class="black-btn" onclick="window.location.href='<?php echo home_url().'/?page=events&id='.$val['ID'];?>'">线上购票</button>
+                                </p>
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="<?php echo $val['events_metas']['event_logo_file_url']?>" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
 
 		</div>
 		<!-- /Container -->
