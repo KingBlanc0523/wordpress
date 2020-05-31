@@ -30,8 +30,8 @@ foreach ($events_metas as $val) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link rel="icon" href="img/page_logo.jpg">
-    <title>Juicy Music</title>
+    <link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/page_logo.jpg">
+    <title>chumi</title>
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -229,11 +229,20 @@ foreach ($events_metas as $val) {
         </div>
     </footer>
 </div>
+
+<iframe id="chumi-iframe" src="<?php echo home_url().'/?page=seats&id='. $events['ID']?>" style="display:none;position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: 0px; border: 0px; width: 100%; height: 100%; z-index: 99999;">
+
+</iframe>
 </body>
 
 </html>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+<script>
+    function closeFrame(){
+        $("#chumi-iframe").hide();
+    }
+</script>

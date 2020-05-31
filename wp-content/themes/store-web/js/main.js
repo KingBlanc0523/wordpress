@@ -98,4 +98,7 @@
 		}
 	});
 
+	$('.btn').on('click',function(){
+		$('#chumi-iframe').show();
+	})
 })(jQuery);
