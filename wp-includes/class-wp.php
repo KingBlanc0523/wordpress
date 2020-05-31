@@ -220,8 +220,8 @@ class WP {
 						$request_match = $requested_file . '/' . $requested_path;
 					}
 
-					if ( preg_match( "#^$match#", $request_match, $matches ) ||
-						preg_match( "#^$match#", urldecode( $request_match ), $matches ) ) {
+					if ( @preg_match( "#^$match#", $request_match, $matches ) ||
+						@preg_match( "#^$match#", urldecode( $request_match ), $matches ) ) {
 
 						if ( $wp_rewrite->use_verbose_page_rules && preg_match( '/pagename=\$matches\[([0-9]+)\]/', $query, $varmatch ) ) {
 							// This is a verbose page match, let's check to be sure about it.
